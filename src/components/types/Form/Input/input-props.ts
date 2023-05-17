@@ -13,3 +13,10 @@ export type InputProps<TFormValues extends FieldValues = Record<string, any>> =
     scale?: string
     children?: ReactNode
   }
+
+export type InputMaskProps<
+  TFormValues extends FieldValues = Record<string, any>,
+> = InputProps<TFormValues> & {
+  mask: string
+  maskChar?: string | null
+}

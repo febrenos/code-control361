@@ -3,11 +3,11 @@ import Button from '@/components/button'
 // import Input from '../../../../components/input'
 // import Logo from '../assets/control361.png'
 // import Terms from '@/components/termsOfUse'
-import { Input, ErrorMessage } from '@/components'
-import './style.css'
+import { Input, InputMask, ErrorMessage } from '@/components'
 import { useFormCompany } from '@/app/signup/hooks'
 import type { FormCompanyFields } from '@/app/signup/types'
 import { checkHasError } from '@/functions'
+import './style.css'
 
 export function FormCompany() {
   const { handleSubmit, onSubmit, register, errors } = useFormCompany()
@@ -22,13 +22,14 @@ export function FormCompany() {
       </h3>
       <div className="content">
         <form method="post">
-          <Input<FormCompanyFields>
+          <InputMask<FormCompanyFields>
             name="cnpj"
             register={register}
             type="text"
             label="CNPJ"
             placeholder="CNPJ"
             hasError={checkHasError(errors.cnpj)}
+            mask="99.999.999/9999-99"
             errorMessage={() =>
               errors.cnpj?.message && (
                 <ErrorMessage>{errors.cnpj?.message}</ErrorMessage>
@@ -68,10 +69,11 @@ export function FormCompany() {
               )
             }
           />
-          <Input<FormCompanyFields>
+          <InputMask<FormCompanyFields>
             register={register}
             name="commercialPhone"
             type="text"
+            mask="(99) 9999-9999"
             label="Telefone"
             placeholder="Telefone para contato"
             hasError={checkHasError(errors.commercialPhone)}

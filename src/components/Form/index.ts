@@ -1,1 +1,1 @@
-export { ErrorMessage, Input } from './components'
+export { ErrorMessage, Input, InputMask } from './components'

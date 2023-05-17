@@ -20,7 +20,6 @@ export function useFormCompany() {
   const onSubmit = (data: FormCompanyFields) => {
     setCompanyState(data)
   }
-
   return {
     errors,
     onSubmit,

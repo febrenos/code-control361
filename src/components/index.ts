@@ -1,1 +1,1 @@
-export { ErrorMessage, Input } from './Form'
+export { ErrorMessage, Input, InputMask } from './Form'

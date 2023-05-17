@@ -1,6 +1,6 @@
-import { FormCompany } from '@/app/signup/components'
+import { Forms } from '@/app/signup/components'
 
-export default function Home() {
+export default function SignUp() {
   return (
     <main>
       <section className="relative py-20">
@@ -20,9 +20,7 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full lg:w-1/2 px-4">
-              <div className="lg:max-w-md p-6 bg-gray-50 text-center rounded-lg">
-                <FormCompany />
-              </div>
+              <Forms />
             </div>
           </div>
         </div>
