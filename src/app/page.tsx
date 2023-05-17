@@ -1,7 +1,7 @@
 import Button from '@/components/button'
 import Logo from '../assets/control361.png'
-import Signup1 from '@/components/cardSignup/signup1'
-import Signup2 from '@/components/cardSignup/signup2'
+import TermsOfUse from '@/app/signup/components/TermsOfUse'
+import FormCompany from '@/app/signup/components/FormCompany'
 
 export default function Home() {
   return (
@@ -24,7 +24,7 @@ export default function Home() {
             </div>
             <div className="w-full lg:w-1/2 px-4">
               <div className="lg:max-w-md p-6 bg-gray-50 text-center rounded-lg">
-                <Signup1 />
+                <FormCompany />
               </div>
             </div>
           </div>

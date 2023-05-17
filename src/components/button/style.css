@@ -1,18 +1,26 @@
-
-
-button{
-    background:#005fb1;
+button {
     padding: 10px;
     border-radius: 5px;
     color: #fff;
     font-weight: 600;
     width: 100%;
-
-}
-button:hover{
+    margin-bottom: 10px;
+    border: 2px solid#005fb1;
+  }
+  
+  button:hover {
     transition: .5s;
     opacity: .9;
-}
+  }
+  
+  button[data-background="solid"] {
+    background: #005fb1;
+  }
+  
+  button[data-background="transparent"] {
+    color: #005fb1;
+    background: #ff000000;
+  }
 /* @layer components {
     .btn-blue {
         @apply bg-blue-500 hover: bg-blue-700 text-white font-bold py-2 px-4 rounded;
