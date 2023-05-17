@@ -1,0 +1,99 @@
+
+
+.content {
+    position: relative;
+    /* margin: 30px 0 0 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px 0;
+  }
+  input {
+    display: flex;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    background: #fff;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #999999;
+    cursor: pointer;
+    padding: 10px;
+  }
+  input::placeholder{
+    color: #999999a2;
+  }
+
+  input[type="checkbox"]{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  input[data-scale="sm"] {
+    width: 200px;
+  }
+  
+  input[data-scale="md"] {
+    width: 250px;
+  }
+  
+  input[data-scale="lg"] {
+    width: 300px;
+  }
+  
+  input[data-scale="all"] {
+    width: 100%;
+  }
+  
+  input:focus + .Label {
+    transform: translateY(-1.5rem);
+    font-size: 0.8rem;
+    color: #1a73e8;
+  }
+  
+  input:focus {
+    border: 2px solid #0077ff;
+  }
+  
+  input:focus,
+  input:valid {
+    outline: none;
+  }
+  
+  input:placeholder-shown + .Label {
+    transform: translateY(1rem);
+    font-size: 1rem;
+  }
+  
+  input:-webkit-autofill + .Label {
+    animation-name: onAutoFillStart;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    background: #fff;
+  }
+  
+  input:-webkit-autofill {
+    -webkit-text-fill-color: #999999a2 !important;
+    -webkit-box-shadow: 0 0 0 30px #fff inset;
+    border: 1px solid #fff;
+  }
+  
+  @keyframes onAutoFillStart {
+    from {
+      opacity: 0;
+    }
+    to {
+      transform: translateY(-1.5rem);
+    }
+  }
+  
+  label {
+    margin: 0 0 5px 10px;
+    color: #999999;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  label.isFocus {
+    transform: translateY(-1.5rem);
+    font-size: 0.8rem;
+  }

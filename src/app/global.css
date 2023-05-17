@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    box-sizing: border-box;
+    font-family: Cabin, sans-serif;
+    transition: all 0.5s ease 0s;
+}
+
+body{
+    background-color: #ebebeb;
+}
+
+.primary-color{
+    background-color: #005fb1;/*#0075b18*/
+}
+

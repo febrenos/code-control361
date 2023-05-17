@@ -1,0 +1,20 @@
+
+
+button{
+    background:#005fb1;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    width: 100%;
+
+}
+button:hover{
+    transition: .5s;
+    opacity: .9;
+}
+/* @layer components {
+    .btn-blue {
+        @apply bg-blue-500 hover: bg-blue-700 text-white font-bold py-2 px-4 rounded;
+    }
+} */
