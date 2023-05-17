@@ -1,3 +1,4 @@
+import type { FormCompanyFields } from '@/app/signup/types'
 export type Steps =
   | 'TERMSOFUSE'
   | 'FORMCOMPANY'
@@ -6,7 +7,13 @@ export type Steps =
   | 'FORMADMINADRESS'
   | 'PASSWORD'
 
+export type Payload = {
+  company: FormCompanyFields
+}
+
 export type SignupState = {
   step: Steps
+  payload: Payload
   setStep: (step: Steps) => void
+  setCompanyState: (company: FormCompanyFields) => void
 }

@@ -3,13 +3,14 @@ import type { FormCompanyFields } from '@/app/signup/types'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { formCompanySchema } from '@/app/signup/schemas'
+import { useSignupStore } from '@/store'
 
 export function useFormCompany() {
+  const { setCompanyState } = useSignupStore()
   const {
     register,
     handleSubmit,
     formState: { errors },
-    watch,
   } = useForm<FormCompanyFields>({
     mode: 'all',
     criteriaMode: 'all',
@@ -17,10 +18,9 @@ export function useFormCompany() {
   })
 
   const onSubmit = (data: FormCompanyFields) => {
-    console.log(data)
+    setCompanyState(data)
   }
-  console.log(errors)
-  console.log('razao', watch('corporateName'))
+
   return {
     errors,
     onSubmit,
