@@ -1,10 +1,16 @@
-import React, { ButtonHTMLAttributes } from 'react';
+import React from 'react'
 import './style.css'
 
-type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  background?: 'transparent' | 'solid'
+}
 
-const Button: React.FC<ButtonProps> = ({ onClick, children }) => {
-  return <button onClick={onClick}>{children}</button>;
-};
+const Button: React.FC<ButtonProps> = ({ onClick, children, background }) => {
+  return (
+    <button onClick={onClick} data-background={background}>
+      {children}
+    </button>
+  )
+}
 
-export default Button;
+export default Button
