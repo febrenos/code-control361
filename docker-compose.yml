@@ -1,8 +1,8 @@
 version: "3.5"
 
 services: 
-  default-project-nextjs:
-   container_name: default-project-nextjs
+  front-control361:
+   container_name: front-control361
    build: 
     context: .
     dockerfile: Dockerfile.dev
@@ -10,7 +10,7 @@ services:
    ports:
     - 3000:3000
    volumes:
-    - .:/app/default-project-nextjs
-    - /app/default-project-nextjs/node_modules
-    - /app/default-project-nextjs/.next
+    - .:/app/front-control361
+    - /app/front-control361/node_modules
+    - /app/front-control361/.next
  
