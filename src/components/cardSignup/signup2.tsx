@@ -1,6 +1,6 @@
 // Pagina inicial nextjs
 import Button from '@/components/button'
-import Input from '../input'
+import Input from '../Form/components/Input'
 import Logo from '../assets/control361.png'
 
 export default function() {

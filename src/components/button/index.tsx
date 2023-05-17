@@ -5,9 +5,14 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   background?: 'transparent' | 'solid'
 }
 
-const Button: React.FC<ButtonProps> = ({ onClick, children, background }) => {
+const Button: React.FC<ButtonProps> = ({
+  onClick,
+  children,
+  background,
+  type = 'button',
+}) => {
   return (
-    <button onClick={onClick} data-background={background}>
+    <button type={type} onClick={onClick} data-background={background}>
       {children}
     </button>
   )

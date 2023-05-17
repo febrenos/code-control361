@@ -1,7 +1,4 @@
-import Button from '@/components/button'
-import Logo from '../assets/control361.png'
-import TermsOfUse from '@/app/signup/components/TermsOfUse'
-import FormCompany from '@/app/signup/components/FormCompany'
+import { FormCompany } from '@/app/signup/components'
 
 export default function Home() {
   return (

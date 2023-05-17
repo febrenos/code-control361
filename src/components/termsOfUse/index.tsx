@@ -1,5 +1,5 @@
 import React from "react";
-import Input from '@/components/input'
+import Input from '@/components/Form/components/Input'
 // import "./style.css";
 
 const TermsOfUse: React.FC = () => {
