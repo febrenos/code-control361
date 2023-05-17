@@ -1,13 +1,6 @@
-// Pagina inicial nextjs
-// import Logo from '../assets/control361.png'
-// import AddressCompany from '@/app/signup/components/Form/AddressCompany'
-// import AdministratorCompany from '@/app/signup/components/Form/AdministratorCompany'
-// import FormCompany from '@/app/signup/components/Form/Company'
-// import FormEnd from '@/app/signup/components/Form/EndCompany'
-// import FormPassword from '@/app/signup/components/Form/PasswordCompany'
-import TermsOfUseCompany from '@/app/signup/components/Form/TermsOfUseCompany'
+import { Forms } from '@/app/signup/components'
 
-export default function Home() {
+export default function SignUp() {
   return (
     <main>
       <section className="relative py-20">
@@ -27,9 +20,7 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full lg:w-1/2 px-4">
-              <div className="lg:max-w-md p-6 bg-gray-50 text-center rounded-lg">
-                <TermsOfUseCompany />
-              </div>
+              <Forms />
             </div>
           </div>
         </div>
