@@ -1,0 +1,14 @@
+.content{
+    display: flex;
+    flex-direction:column;
+    height: 300px;
+    justify-content: center;
+}
+.subTitle{
+    color: #005fb1;
+    font-size: 23px;
+    font-weight: 600;
+}
+.text{
+    color: #999999;
+}

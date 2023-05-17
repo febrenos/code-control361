@@ -9,6 +9,7 @@ html{
     box-sizing: border-box;
     font-family: Cabin, sans-serif;
     transition: all 0.5s ease 0s;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -19,3 +20,20 @@ body{
     background-color: #005fb1;/*#0075b18*/
 }
 
+*{
+    margin:0;
+    padding:0;
+    outline:0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+    transition:.5s;
+}
+
+.cardSign{
+    height: 450px;
+    overflow: auto;
+    padding-right: 10px;
+    @media(width < 768px){
+       height:auto; 
+    }
+}

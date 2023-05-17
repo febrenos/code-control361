@@ -2,12 +2,12 @@
 import Button from '@/components/button'
 // import Input from '../../../../components/input'
 // import Logo from '../assets/control361.png'
-// import Terms from '@/components/termsOfUse'
+// import Terms from '@/components/TermsOfUseCompany'
 import './style.css'
 
 export default function Home() {
   return (
-    <>
+    <div className="cardSign">
       <form action="#">
         {/* <img src={Logo} alt=""/> */}
         <span className="text-sm text-gray-500 font-semibold uppercase">
@@ -18,7 +18,7 @@ export default function Home() {
         </h3>
         <div className="content">
           <div className="terms">
-            <h2>Title of terms</h2>
+            <h2 className="titleTerms">Termos de uso</h2>
 
             <b>
               TERMO DE CONSENTIMENTO PARA TRATAMENTO DE DADOS PESSOAIS – LGPD
@@ -151,6 +151,6 @@ export default function Home() {
         </label>
         <Button>Get Startted</Button>
       </form>
-    </>
+    </div>
   )
 }

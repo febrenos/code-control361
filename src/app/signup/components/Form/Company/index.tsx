@@ -2,13 +2,12 @@
 import Button from '@/components/button'
 // import Input from '../../../../components/input'
 // import Logo from '../assets/control361.png'
-// import Terms from '@/components/termsOfUse'
+// import Terms from '@/components/TermsOfUseCompany'
 import Input from '@/components/input'
-import './style.css'
 
 export default function Home() {
   return (
-    <>
+    <div className="cardSign">
       <form action="#">
         {/* <img src={Logo} alt=""/> */}
         <span className="text-sm text-gray-500 font-semibold uppercase">
@@ -43,12 +42,12 @@ export default function Home() {
             scale="md"
             type="file"
             label="Cartao CNPJ"
-            placeholder="Telefone para contato"
+            placeholder="Escolher arquivo"
           />
         </div>
-        <Button background="solid">Continuar</Button>
+        <Button>Continuar</Button>
         <Button background="transparent">Voltar</Button>
       </form>
-    </>
+    </div>
   )
 }

@@ -2,7 +2,7 @@ import React from "react";
 import Input from '@/components/input'
 // import "./style.css";
 
-const TermsOfUse: React.FC = () => {
+const TermsOfUseCompany: React.FC = () => {
     return (
         <div className="content">
             <div className="terms">
@@ -61,4 +61,4 @@ const TermsOfUse: React.FC = () => {
     );
 };
 
-export default TermsOfUse;
+export default TermsOfUseCompany;

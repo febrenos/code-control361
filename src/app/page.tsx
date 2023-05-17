@@ -1,8 +1,11 @@
 // Pagina inicial nextjs
-import Button from '@/components/button'
-import Logo from '../assets/control361.png'
-import TermsOfUse from '@/app/signup/components/TermsOfUse'
-import FormCompany from '@/app/signup/components/FormCompany'
+// import Logo from '../assets/control361.png'
+// import AddressCompany from '@/app/signup/components/Form/AddressCompany'
+// import AdministratorCompany from '@/app/signup/components/Form/AdministratorCompany'
+// import FormCompany from '@/app/signup/components/Form/Company'
+// import FormEnd from '@/app/signup/components/Form/EndCompany'
+// import FormPassword from '@/app/signup/components/Form/PasswordCompany'
+import TermsOfUseCompany from '@/app/signup/components/Form/TermsOfUseCompany'
 
 export default function Home() {
   return (
@@ -25,11 +28,12 @@ export default function Home() {
             </div>
             <div className="w-full lg:w-1/2 px-4">
               <div className="lg:max-w-md p-6 bg-gray-50 text-center rounded-lg">
-                <FormCompany />
+                <TermsOfUseCompany />
               </div>
             </div>
           </div>
         </div>
+        {/* </div> */}
       </section>
     </main>
   )

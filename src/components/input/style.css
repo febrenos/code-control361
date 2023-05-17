@@ -10,7 +10,7 @@
   }
   input {
     display: flex;
-    border: 2px solid #fff;
+    border: 2px solid #ebebeb;
     border-radius: 8px;
     background: #fff;
     padding: 10px 0;
@@ -20,7 +20,7 @@
     padding: 10px;
   }
   input::placeholder{
-    color: #999999a2;
+    color: #999999d2;
   }
 
   input[type="checkbox"]{
