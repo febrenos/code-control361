@@ -1,1 +1,1 @@
-export type { SignupState, Steps } from './Signup'
+export type { SignupState, StepsSignUp } from './Signup'

@@ -6,11 +6,12 @@ import { formCompanySchema } from '@/app/signup/schemas'
 import { useSignupStore } from '@/store'
 
 export function useFormCompany() {
-  const { setCompanyState } = useSignupStore()
+  const { setCompanyState, setStep } = useSignupStore()
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm<FormCompanyFields>({
     mode: 'all',
     criteriaMode: 'all',
@@ -20,10 +21,16 @@ export function useFormCompany() {
   const onSubmit = (data: FormCompanyFields) => {
     setCompanyState(data)
   }
+
+  const handleBackStep = () => {
+    setStep('TERMSOFUSE')
+    reset()
+  }
   return {
     errors,
     onSubmit,
     register,
     handleSubmit,
+    handleBackStep,
   }
 }

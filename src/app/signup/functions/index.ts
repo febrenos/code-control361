@@ -1,1 +1,1 @@
-export {} from './check-step'
+export { checkStep } from './check-step'

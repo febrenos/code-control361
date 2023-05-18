@@ -36,4 +36,8 @@ body{
     @media(width < 768px){
        height:auto; 
     }
+
 }
+.toast {
+    @apply my-3 max-w-xs p-4 bg-white border-2 border-blue-500 rounded-lg shadow;
+  }

@@ -1,12 +1,7 @@
-// Pagina inicial nextjs
-import Button from '@/components/button'
-// import Input from '../../../../components/input'
-// import Logo from '../assets/control361.png'
-// import Terms from '@/components/TermsOfUseCompany'
-import Input from '@/components/input'
+import { Button, Input } from '@/components'
 import './style.css'
 
-export default function Home() {
+export function FormAddressCompany() {
   return (
     <div className="cardSign">
       <form action="#">

@@ -1,5 +1,5 @@
 // Pagina inicial nextjs
-import Button from '@/components/button'
+import Button from '@/components/Button/components/Button'
 import Input from '../Form/components/Input'
 import Logo from '../assets/control361.png'
 

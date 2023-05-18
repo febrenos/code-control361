@@ -1,16 +1,13 @@
 'use client'
-import Button from '@/components/button'
-import TimeLine from '@/components/TimeLine'
-// import Input from '../../../../components/input'
-// import Logo from '../assets/control361.png'
-// import Terms from '@/components/termsOfUse'
-import { Input, InputMask, ErrorMessage } from '@/components'
+import { Button, Input, InputMask, ErrorMessage } from '@/components'
 import { useFormCompany } from '@/app/signup/hooks'
 import type { FormCompanyFields } from '@/app/signup/types'
 import { checkHasError } from '@/functions'
+import TimeLine from '@/components/TimeLine'
 
 export function FormCompany() {
-  const { handleSubmit, onSubmit, register, errors } = useFormCompany()
+  const { handleSubmit, onSubmit, register, handleBackStep, errors } =
+    useFormCompany()
   return (
     <>
       {/* <img src={Logo} alt=""/> */}
@@ -103,7 +100,9 @@ export function FormCompany() {
           <Button onClick={handleSubmit(onSubmit)} background="solid">
             Continuar
           </Button>
-          <Button background="transparent">Voltar</Button>
+          <Button onClick={handleBackStep} background="transparent">
+            Voltar
+          </Button>
         </form>
       </div>
     </>
