@@ -2,6 +2,7 @@ import Button from '@/components/button'
 // import Input from '../../../../components/input'
 // import Logo from '../assets/control361.png'
 // import Terms from '@/components/TermsOfUseCompany'
+import TimeLine from '@/components/TimeLine'
 import './style.css'
 
 export function TermsOfUse() {
@@ -15,6 +16,7 @@ export function TermsOfUse() {
         <h3 className="mb-8 text-2xl font-bold font-heading">
           Create new account
         </h3>
+        <TimeLine finished={1} steps={7} />
         <div className="content">
           <div className="terms">
             <h2 className="titleTerms">Termos de uso</h2>

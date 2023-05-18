@@ -44,7 +44,7 @@
     width: 100%;
   }
   input[data-haserror=true] {
-    border:2px solid red;
+    border:2px solid #ff000054;
   }
   
   input:focus + .Label {

@@ -3,10 +3,12 @@ import './style.css'
 import type { InputProps } from '@/components/types'
 import type { FieldValues } from 'react-hook-form'
 
-interface LabelProps extends React.LabelHTMLAttributes<HTMLLabelElement> {
-  isFocus: boolean
-}
+// interface CustomInputProps extends InputProps<FieldValues> {
+//   maxLength?: number
+//   minLength?: number
+// }
 
+// <FieldValues>
 export function Input<TFormValues extends FieldValues>({
   label = '',
   type,
@@ -16,11 +18,13 @@ export function Input<TFormValues extends FieldValues>({
   hasError = false,
   register,
   errorMessage,
+  maxLength = 30,
+  minLength = 15,
   ...rest
 }: InputProps<TFormValues>) {
   return (
     <div className="content">
-      <label className="label" htmlFor={label} {...(rest as LabelProps)}>
+      <label className="label" htmlFor={label}>
         {label}
       </label>
       {register ? (
@@ -33,6 +37,8 @@ export function Input<TFormValues extends FieldValues>({
           id={label}
           autoComplete="off"
           placeholder="Digite algo..."
+          maxLength={maxLength}
+          minLength={minLength}
           {...rest}
         />
       ) : (
@@ -44,6 +50,8 @@ export function Input<TFormValues extends FieldValues>({
           data-haserror={hasError}
           autoComplete="off"
           placeholder="Digite algo..."
+          maxLength={maxLength}
+          minLength={minLength}
           {...rest}
         />
       )}

@@ -1,5 +1,6 @@
 'use client'
 import Button from '@/components/button'
+import TimeLine from '@/components/TimeLine'
 // import Input from '../../../../components/input'
 // import Logo from '../assets/control361.png'
 // import Terms from '@/components/termsOfUse'
@@ -19,6 +20,7 @@ export function FormCompany() {
       <h3 className="mb-8 text-2xl font-bold font-heading">
         Create new account
       </h3>
+      <TimeLine finished={2} steps={7} />
       <div className="content">
         <form method="post">
           <InputMask<FormCompanyFields>
@@ -73,7 +75,7 @@ export function FormCompany() {
             name="commercialPhone"
             type="text"
             mask="(99) 9999-9999"
-            label="Telefone"
+            label="Telefone Comercial"
             placeholder="Telefone para contato"
             hasError={checkHasError(errors.commercialPhone)}
             errorMessage={() =>
