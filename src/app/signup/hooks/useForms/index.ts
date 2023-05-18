@@ -1,5 +1,10 @@
+'use client'
 import { useSignupStore } from '@/store'
 
 export function useForms() {
-  const { step, setStep } = useSignupStore()
+  const { step } = useSignupStore()
+
+  return {
+    step,
+  }
 }

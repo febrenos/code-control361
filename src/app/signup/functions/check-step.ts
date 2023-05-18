@@ -1,2 +1,3 @@
-import type { Steps } from '@/store/types'
-export const checkStep = () => {}
+import type { StepsSignUp } from '@/store/types'
+export const checkStep = (current: StepsSignUp, expected: StepsSignUp) =>
+  current === expected

@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import './style.css'
 import type { InputMaskProps } from '@/components/types'
@@ -29,7 +30,7 @@ export function InputMask<TFormValues extends FieldValues>({
       {register ? (
         <ReactInputMask
           mask={mask}
-          maskChar={null}
+          maskChar={maskChar}
           {...register(name!)}
           className="input"
           data-haserror={hasError}
@@ -43,7 +44,7 @@ export function InputMask<TFormValues extends FieldValues>({
       ) : (
         <ReactInputMask
           mask={mask}
-          maskChar={null}
+          maskChar={maskChar}
           className="input"
           data-scale={scale}
           type={type}
