@@ -41,7 +41,7 @@ export default function LoginPage() {
       <div className="relative container mx-auto">
         <div className="flex flex-wrap items-center -mx-4">
           <h1 className="text-4xl lg:text-6xl text-center font-bold w-full">
-            Bem-vindo à nosso control 361
+            control 361
           </h1>
         </div>
       </div>
